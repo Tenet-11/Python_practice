@@ -81,3 +81,40 @@ print(tuple_2)
 # ----------------------------------------------
 # ----------------------------------------------
 
+#  dict
+#  dict 是「key → value」的對應表，用key找資料( 對應C++中的map)
+
+# 建立dict
+d={
+    "name":"Jack",
+    "age":20,
+    "major":"CS"
+}
+print(d)
+
+# 讀取資料(用key)
+print(d["name"])
+print(d["age"])
+
+# 修改/新增資料
+d["age"]=21
+d["gpa"]=4.0
+
+# 刪除資料
+del d["major"]
+print(d)
+
+# 查找資料是否存在
+print("name" in d)  #TRUE
+print("height" in d) #FALSE
+
+# 取得所有key/value
+print(d.keys())
+print(d.values())
+print(d.items())  # 取得所有 (key, value) 配對
+
+# 用for迴圈走訪
+for key in d:
+    print(key,d[key])
+for key,value in d.items():
+    print(key,value)
