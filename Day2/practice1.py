@@ -1,23 +1,83 @@
 
+#  list 
+
+# 建立一個 list（直接給初始值）
 a=[10,20,30]
 print(a)
 
-b=list(range(5))
-print(b)
 
+# 用 range 建立連續整數 list
+# range(5) 代表 0 <= x < 5
+# list(range(5)) 會轉成真正的 list
+b=list(range(5))
+print(b) # [0, 1, 2, 3, 4]
+
+
+# 空list
 cons=[]
 for i in range(5):
     cons.append(i)
-print(cons)
+print(cons)  # [0, 1, 2, 3, 4]
+
 
 #slicing
+# 語法：list[start:end]
+# 規則：start <= index < end
 cons_slice=cons[1:4]
-print("slice 1:4:",cons_slice)
+print("slice 1:4:",cons_slice)   # [1, 2, 3]
 
 #反轉
-print("reverse: ",a[::-1])
+# 語法：list[start:end:step]
+# step = -1 代表從後往前走
+# a[::-1] 會產生新的反轉 list
+print("reverse: ",a[::-1])   # [30, 20, 10]
+
+
+
+# ----------------------------------------------
+# ----------------------------------------------
+# ----------------------------------------------
+
+#  tuple
+t=(10,20,30)
+print(t)
+
+# 只有一個元素的tuple要加逗號
+single_t=(5,)
+print(single_t)
+
+# 存取元素 (用index)
+print(t[0])
+print(t[1])
+
+# 長度
+print("length: ",len(t))
+
+# 查找(in 運算子)
+print("20是否存在:",20 in t)
+
+# tuple不可修改否則會報錯
+# t[0] = 100   # ❌ TypeError
+
+
+# tuple unpacking 
+# 一次拆開多個值
+aaa,bbb,ccc=t
+print("unpacking:",aaa,bbb,ccc)
+
+
+# tuple 裡面如果放 mutable 物件（例如 list）
+# tuple 本身不能改，但裡面的 list 可以改
+tuple_2=([1,2],[3,4])
+tuple_2[0][0]=999
+print(tuple_2)
+# key:  tuple 不能改「元素指向」
+#       但如果元素本身是 mutable，可以改它的內容
 
 
 
 
+# ----------------------------------------------
+# ----------------------------------------------
+# ----------------------------------------------
 
