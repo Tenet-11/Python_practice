@@ -118,3 +118,57 @@ for key in d:
     print(key,d[key])
 for key,value in d.items():
     print(key,value)
+
+
+# ----------------------------------------------
+# ----------------------------------------------
+# ----------------------------------------------
+
+# set
+# set不重複、沒有順序
+
+# 建立set
+s={1,2,3}
+print(s)
+
+# 自動去重
+s2={1,2,2,3,3,3}
+print("去重後:",s2)
+
+# list轉set(常見用法:去重)
+s3=[1,2,2,3,3,4]
+unique=set(s3)
+print("unique",unique)
+
+# 新增&刪除元素
+s.add(4)
+print("add 4:",s)
+s.remove(2)
+print(s)
+# 如果不確定元素是否存在，建議用 discard
+s.discard(100)   # 不會報錯
+
+# 查找
+print("3 是否存在:",3 in s)
+
+
+
+# 集合運算( set的大優勢 )
+set_a={1,2,3}
+set_b={3,4,5}
+
+# 交集（共同元素）
+print("交集:", set_a & set_b)
+
+# 聯集（全部元素）
+print("聯集:", set_a | set_b)
+
+# 差集（只在 a）
+print("差集:", set_a - set_b)
+
+# 對稱差集（不同的部分）
+print("對稱差集:", set_a ^ set_b)
+
+# set 沒有順序
+# 不能用 index
+# print(s[0])  # ❌ 會報錯

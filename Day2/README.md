@@ -130,7 +130,7 @@ Immutable：
 
 ---
 
-##  Hash 與 Hash Table）
+##  Hash 與 Hash Table
 [Hash (雜湊)](https://ithelp.ithome.com.tw/articles/10208884)
 
 ### 一、什麼是 Hash？
@@ -180,6 +180,8 @@ Hash Table 是一種資料結構。
 1. 計算 hash(key)
 2. 找到對應 index
 3. 取出資料
+
+---
 
 ## 為什麼 list 不能當 dict key？
 
