@@ -30,6 +30,14 @@ names=["Amy","Bob","Cindy"]
 for index,name in enumerate(names):
     print(index,name)
 
+# 使用zip同時遍歷多個序列
+# zip 會跑：最短的那個序列長度
+zip_name=["Amy","Bob","Cindy"]
+zip_score=[85,92,78]
+zip_age=[18,19,20]
+
+for name,score,age in zip(zip_name,zip_score,zip_age):
+    print(name,score,age)
 
 
 # while
