@@ -6,7 +6,7 @@
 # 3) 統一輸出結果（把「計算邏輯」留在 func.py）
 
 
-import func
+import Day7.func as func
 
 user_input=input("請輸入一段文字: ")
 
